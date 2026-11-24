@@ -9,133 +9,74 @@
 <body>
 
   <div class="fornav">
-    <a href="#home" class="mypersonalportfolio">My Personal Portfolio</a>
+    <a href="index.html" class="mypersonalportfolio">My Personal Portfolio</a>
     <div class="stored">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#contact">Contact</a>
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="dreams.html">Dreams</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div> 
 
-  <div id="home" class="introname">
+  <main id="home" class="introname">
+    <div class="mypic">
+      <img src="images/personalpic.jpg" alt="Portrait of Jeremy M. Tajos">
+    </div>
+
     <div class="containit">
       <p class="itstudent">IT Student</p>
-      <h1>Hi, I'm Jeremy M. Tajos</h1>
+      <h1>Welcome! I'm Jeremy M. Tajos</h1>
+      <p class = "tagline">Turning curiosity and core fundamentals into practical tech skills.</p>
       <p>
-        Welcome to my personal portfolio, an IT student learning the basics of C#, HTML, and CSS one step at a time.
+        I am an aspiring IT student learning HTML, CSS, C#, and basic networking.
+        This website is my digital portfolio, where I share more about myself,
+        my hobbies, my interests, my favorite things, and my future dreams.
       </p>
-    </div> 
+    </div>
+  </main>
 
-    <div class="mypic">
-      <img src="images/personalpic.jpg" alt="Picture of Jeremy Tajos" title = "Picture of Jeremy Tajos">
-    </div> 
-  </div> 
-
-  <!-- About -->
-  <div id="about" class="forclickable">
-    <h2>About</h2>
-    <div class="box">
-      <p>
-        I'm <strong>Jeremy M. Tajos</strong>, an aspiring developer and IT student exploring the core building blocks of programming through <strong>C#</strong> and front-end basics with <strong>HTML/CSS</strong>. This portfolio documents my learning journey, practice exercises, and early projects as I continue to grow my technical skills one step at a time.
-      </p>
-      <p><strong>School:</strong> Laguna State Polytechnic University - SPCC</p>
-      <p><strong>Hobbies:</strong></p>
-      <ul>
-        <li>Fishing</li>
-        <li>Playing Rubik's Cube</li>
-        <li>Playing Online Games</li>
-      </ul>
-    </div> 
-  </div> 
-
-  <div id="skills" class="forclickable">
-    <h2>Skills</h2>
-
-    <div class="box">
-      <h3>Networking Basics</h3>
-      <ol>
-        <li>
-          <strong>Basic computer setup:</strong> Local connections, routers/modems, IP addressing, DNS, DHCP, and Client/Server concepts.
-        </li>
-        <li>
-          <strong>Basic network troubleshooting at monitoring ng connectivity:</strong> Testing connections and checking link stability
-        </li>
-      </ol>
-    </div> 
-
-    <div class="box">
-      <h3>C# (Basics / Foundational)</h3>
-      <ol>
-        <li>
-          <strong>Variables and datatypes, input/output, conditional statements, loops, and simple console problem-solving:</strong> Building simple console programs and practicing basic programming logic.
-        </li>
-      </ol>
-    </div> 
-  </div> 
-
-  <div id="certificates" class="forclickable">
-    <h2>Certificates</h2>
-    <p class="tesda">
-      Click the <strong>TESDA NC II</strong> image to view it larger on screen. For <strong>IBM</strong> and <strong>Cisco</strong>, click the image to open the verification link in a new tab.x
-    </p>
-
-    <div class="certstored">
-      <div class="box certlayout cert-card">
-        <a href="#nc2-certlink">
-          <img src="images/nc2.jpg" alt="TESDA NC II Certificate" title="Click the photo for full view">
-        </a>
-        <h3>TESDA NC II</h3>
-        <p>Click picture for full view</p>
-      </div> 
-
-      
-      <div class="box certlayout cert-card">
-        <a href="https://students.yourlearning.ibm.com/certificate/share/7b2bee8bf4ewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI0MzM2Mzk4UkVHIiwKICAib2JqZWN0SWQiIDogIlVSTC1BNTBBOTFEMDhBREMiCn0b75d72ee3f-10" target="_blank" title="Click the photo for verification">
-          <img src="images/ibm.jpg" alt="IBM Introduction to IT Certificate">
-        </a>
-        <h3>IBM - Introduction to IT</h3>
-        <p>Click picture for verification</p>
-      </div> 
-
-      
-      <div class="box certlayout cert-card">
-        <a href="https://www.credly.com/badges/59687dd5-7953-42c8-b2e7-e5c09de06f2c/public_url" target="_blank" title="Click the photo for verification">
-          <img src="images/cisco.jpg" alt="Cisco Python Essentials 1 Certificate">
-        </a>
-        <h3>Cisco - Python Essentials 1</h3>
-        <p>Click picture for verification</p>
-      </div> 
-    </div> 
-  </div> 
-
-  
-  <div id="nc2-certlink" class="certview">
-    <div class="certfullview">
-      <a href="#certificates" class="close-nc2">Close</a>
-      <img src="images/nc2.jpg" alt="TESDA NC II Full Certificate">
-    </div> 
-  </div> 
-
-  
-  <div id="contact" class="forclickable">
-    <h2>Contact</h2>
-    <div class="multiplechange">
-      <p><strong>Address:</strong> Brgy. San Juan, Tiaong, Quezon</p>
-      <p><strong>Email:</strong> 0326-0857@lspu.edu.ph</p>
-      <p><strong>Number:</strong> 0920-373-7993</p>
-      <div class="social-medias">
-        <a  href="https://www.facebook.com/DK.TheBookishEnigma7" target="_blank" title="Open Facebook profile in a new tab" >Facebook</a>
-        <a href="https://www.instagram.com/dk.bookish19?lqvp=N3FwbzVhOHhheGRu" target="_blank" title="Open Instagram profile in a new tab">Instagram</a>
-        <a href="https://www.tiktok.com/@jerxmymt?_r=1&_t=ZS-9Bb2Nh7T6bG"  target="_blank" title="Open TikTok profile in a new tab">Tiktok</a>
-      </div> 
-    </div> 
-  </div> 
+  <section class="forclickable">
+    <h2>Explore My Website</h2>
+    <div class="forgridbox">
+      <div class="specificfornav">
+        <h3>About Me</h3>
+        <p>Learn about my background, school, and personality.</p>
+        <a href="about.html">Read More</a>
+      </div>
+      <div class="specificfornav">
+        <h3>Hobbies and Interests</h3>
+        <p>Discover what I enjoy doing in my free time.</p>
+        <a href="hobbies.html">View Hobbies</a>
+      </div>
+      <div class="specificfornav">
+        <h3>My Gallery</h3>
+        <p>View photos and memories that are important to me.</p>
+        <a href="gallery.html">Open Gallery</a>
+      </div>
+      <div class="specificfornav">
+        <h3>My Favorites</h3>
+        <p>See my favorite food, colors, activities, and other interests.</p>
+        <a href="favorites.html">View Favorites</a>
+      </div>
+      <div class="specificfornav">
+        <h3>Dreams and Goals</h3>
+        <p>Explore my career goals and personal bucket list.</p>
+        <a href="dreams.html">View Dreams</a>
+      </div>
+      <div class="specificfornav">
+        <h3>Contact Me</h3>
+        <p>Find my school email and social media links.</p>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </section>
 
   
   <div class="footer">
-    <p>My Personal Portfolio | HTML & CSS</p>
+    <p>Jeremy Tajos Portfolio | HTML & CSS</p>
   </div> 
 
 </body>
