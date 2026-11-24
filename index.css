@@ -114,7 +114,6 @@ body {
   margin-bottom: 12px;
 }
 
-.aboutgrid,
 .forgridbox,
 .albums,
 .favboxes,
@@ -123,6 +122,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 12px;
+}
+.aboutgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
 .mypicture img,
@@ -233,6 +237,17 @@ body {
   margin-top: 6px;
   margin-bottom: 12px;
   line-height: 1.4;
+}
+.eduback {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+.eduback li{
+margin-bottom: 6px;
+line-height: 1.5;
+}
+.eduback li:last-child {
+  margin-bottom: 0;
 }
 
 
