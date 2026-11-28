@@ -4,7 +4,11 @@
 
 body {
   margin: 0;
-  background: #f2f2f2;
+  background-image: url("images/forbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #222222;
   font-family: Arial, sans-serif;
   line-height: 1.5;
@@ -101,7 +105,6 @@ body {
 }
 
 .specificfornav,
-.multiplechange,
 .foronecard,
 .favcards,
 .dreamcards,
@@ -144,10 +147,6 @@ body {
   text-align: center;
 }
 
-.tag-list {
-  padding-left: 20px;
-}
-
 .forgallerypic {
   text-align: center;
 }
@@ -173,37 +172,6 @@ body {
   background: #dddddd;
 }
 
-.contact-form {
-  width: 100%;
-}
-
-.form-group {
-  margin-bottom: 10px;
-}
-
-.form-group label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #777777;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
-}
-
-.form-button {
-  background: #333333;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  padding: 9px 14px;
-  cursor: pointer;
-}
 .social-medias a {
   display: inline-block;
   margin-top: 6px;
@@ -271,4 +239,113 @@ line-height: 1.5;
     display: block;
     overflow-x: auto;
   }
+}
+
+.aboutgrid .foronecard,
+.favcards,
+.dreamcards {
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.aboutgrid .foronecard:hover,
+.favcards:hover,
+.dreamcards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  border-color: #2563eb;
+}
+
+.forgallerypic {
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.forgallerypic img {
+  transition: transform 0.3s;
+}
+
+.forgallerypic:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.forgallerypic:hover img {
+  transform: scale(1.06);
+}
+
+.favtable tbody tr {
+  transition: background-color 0.2s;
+}
+
+.favtable tbody tr:hover {
+  background-color: #eff6ff;
+}
+
+.foronecard ol li {
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.foronecard ol li:hover {
+  background-color: #eff6ff;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.specificfornav a {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 8px 14px;
+  background-color: #3f4a67;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.specificfornav a::after {
+  content: " \2192";   
+}
+
+.specificfornav a:hover {
+  background-color: #2563eb;
+  transform: translateX(3px);
+}
+
+.specificfornav a:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+.social-medias a {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social-medias a::after {
+  content: " \2197";   /* arrow na ↗ */
+}
+
+.social-medias a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-layout article:last-child a[href^="mailto:"] {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #506ab1;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.contact-layout article:last-child a[href^="mailto:"]:hover {
+  background-color: #2563eb;
+  transform: translateX(3px);
 }
